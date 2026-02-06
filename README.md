@@ -1,12 +1,12 @@
-# Mini Gestor de Tareas - Docker Setup
+# 📋 Mini Gestor de Tareas - Docker Setup
 
 Esta aplicación está completamente configurada para funcionar con Docker y Docker Compose.
 
-## Requisitos
+## 📋 Requisitos
 
 - Docker Desktop instalado
 
-## Arquitectura
+## 🏗️ Arquitectura
 
 La aplicación consiste en 4 servicios:
 
@@ -15,13 +15,13 @@ La aplicación consiste en 4 servicios:
 3. **Nginx Backend Proxy** (`nginx`) - Servidor web para el backend en el puerto 8000
 4. **React Frontend** (`frontend`) - Aplicación React con Nginx en el puerto 5173
 
-## URLs de Acceso
+## 🌐 URLs de Acceso
 
 - **Frontend (React)**: http://localhost:5173
 - **Backend (Laravel API)**: http://localhost:8000
 - **Base de Datos**: localhost:3307 (MySQL)
 
-## Instrucciones de Uso
+## 📚 Instrucciones de Uso
 
 ### 1. Clonar el repositorio
 
@@ -49,6 +49,7 @@ docker ps
 ```
 docker exec -it laravel_app bash
 php artisan migrate
+exit
 ```
 
 ### 5. Verificar que todo funciona
@@ -56,7 +57,7 @@ php artisan migrate
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:8000
 
-## Configuración de la Base de Datos
+## ⚙ Configuración de la Base de Datos
 
 - **Database**: tasks_db
 - **Username**: user
@@ -64,9 +65,7 @@ php artisan migrate
 - **Host**: db (interno de Docker)
 - **External Access**: localhost:3307
 
-Las migraciones se ejecutan automáticamente durante la construcción del contenedor.
-
-## Estructura de Archivos Importantes
+## 📚 Estructura de Archivos Importantes
 
 - `docker-compose.yml` - Orquestación de todos los servicios
 - `backend/Dockerfile` - Configuración del contenedor Laravel
@@ -75,9 +74,21 @@ Las migraciones se ejecutan automáticamente durante la construcción del conten
 - `nginx.conf` - Configuración de Nginx para el backend
 - `frontend/nginx.frontend.conf` - Configuración de Nginx para el frontend
 
-## Notas Técnicas
+## 📑 Notas Técnicas
 
 - El backend utiliza variables de entorno del docker-compose, no el archivo .env local
 - Los datos de la base de datos persisten en un volumen Docker
 - Los contenedores están optimizados para producción
 - El frontend sirve archivos estáticos compilados a través de Nginx
+
+## 💻 Vistas de la App
+
+### Login
+
+### Register
+
+### Tareas
+
+### Crear Tarea
+
+### Editar Tarea
