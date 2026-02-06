@@ -85,10 +85,21 @@ exit
 
 ### Login
 
+<img width="1366" height="633" alt="image" src="https://github.com/user-attachments/assets/8eb9857c-7ae3-4b7d-a731-7dcac6b89a6a" />
+
 ### Register
+
+<img width="1366" height="637" alt="image" src="https://github.com/user-attachments/assets/d9982fae-18a1-4e34-b82e-ed5567721857" />
 
 ### Tareas
 
+<img width="1366" height="637" alt="image" src="https://github.com/user-attachments/assets/72047bbc-b1d1-4547-bb3f-e135c40fcdc3" />
+<img width="1366" height="636" alt="image" src="https://github.com/user-attachments/assets/702d0472-35e7-4093-bf74-66172b8d696e" />
+
 ### Crear Tarea
 
+<img width="1347" height="634" alt="image" src="https://github.com/user-attachments/assets/62d519aa-6371-4e27-b2af-b26dfb4445e7" />
+
 ### Editar Tarea
+
+<img width="1348" height="637" alt="image" src="https://github.com/user-attachments/assets/5712a1fb-bcc0-4391-a9ec-be808f009dff" />
