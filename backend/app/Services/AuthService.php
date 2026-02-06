@@ -6,6 +6,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
 use App\Models\User;
 use App\Repositories\UserRepository;
+use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -51,12 +52,13 @@ class AuthService
         $credentials = $request->only('email', 'password');
 
         if (!$token = JWTAuth::attempt($credentials)) {
-            throw new \Illuminate\Validation\ValidationException(
-                null,
-                [
-                    'email' => ['Invalid credentials']
+            throw new HttpResponseException(response()->json([
+                'success' => false,
+                'message' => 'Credenciales incorrectas',
+                'errors' => [
+                    'general' => ['Credenciales incorrectas']
                 ]
-            );
+            ], 422));
         }
 
         $user = Auth::user();
