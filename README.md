@@ -1,6 +1,9 @@
-# 📋 Mini Gestor de Tareas - Docker Setup
+# 📌 Mini Gestor de Tareas — Fullstack App (Laravel + React + Docker)
 
-Esta aplicación está completamente configurada para funcionar con Docker y Docker Compose.
+Este proyecto es un **mini gestor de tareas** desarrollado como parte de una evaluación técnica.  
+Incluye autenticación JWT, CRUD completo de tareas y un frontend moderno con React + Tailwind.
+
+Toda la aplicación es **contenizable con Docker**, permitiendo levantar todo el entorno con un solo comando.
 
 ## 📋 Requisitos
 
